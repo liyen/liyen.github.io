@@ -1,57 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
-    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    color: #444444;
+    font-family: Jost, sans-serif;
 }
+
+/*** button scroll to top ***/
+.btnScrollToTop {
+    background-color: #fcd069;
+    color: #000000;
+    font-size: larger;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;    
+    transition:all 0.3s;
+}
+
+.btnScrollToTop:hover {    
+    background-color: #ced4da;
+}
+
+/*** header ***/
 header{
     display: block;
-    /*background-color: #AAAAAA; /*test*/
     padding-left: 8%;
     padding-right: 8%;
     height: 60px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #333333;
 }
+
 header h1{
     display: inline-block;
-    color: #666666;    
+    color: #444444;    
     font-size: larger;
     line-height: 60px;
     font-weight: normal;
-    padding: 0;
-    margin: 0;
+
+    /*** underline of header ***/
+    background-image: linear-gradient( #f8cc65, #f8cc65);
+    background-position: bottom 40% left 10px;
+    background-size: 100% 20%;
+    padding-right: 10px;
+    background-repeat: no-repeat;
 }
+
 nav{
     display: inline-block;    
-    word-spacing: 10px;
     font-size: large;
     line-height: 60px;    
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+}
+
+#btnNav {
+    display: none;
+}
+
+#btnNav input{
+    display: none;
+}
+
+#nav_btn {
+    border: none;
+    background-color: #f5f5f5;
+    display: none;
 }
 
 nav a{
     color: #aaaaaa;
     text-decoration: none;
+    font-style: normal;
     border: none;
     padding: 10px 10px 5px 10px;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
-
 
 nav a:hover{
-    color:#6b6b6b;
+    color: #444444;
+    text-decoration: none;
     border-bottom: 2px solid #444444;
 }
+
 nav a.active{
     color: #444444;
+    text-decoration: none;
     border-bottom: none;
 }
 
-article{
-    /*background-color:rgb(237, 237, 237); /*test*/
-    height: 60vh;
-    display:block;
-    padding-left: 5%;
-    padding-right: 5%;
+main{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+hr{
+    visibility: hidden;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome{
+    height: 40vh;
+}
+
+#intro{
+    font-size: x-large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project{
+    width: 90%;
+    text-decoration: none;
+}
+
+.proj_title{
+    color: #444444;
+}
+
+.project:hover .proj_title{
+    text-decoration: underline;
+}
+
+.project img{
+    width: 100%;
+}
+
+.proj_img_hover {
+    display: none;
+}
+
+.project:hover .proj_img {
+    display: none;
+}
+
+.project:hover .proj_img_hover {
+    display: block;
+}
+
+.proj_title {
+    font-size: x-large;
+}
+
+#LaserMarkingApplication{
+    width: 30vw;
+}
+
+footer{
+    margin-top: 10vh;
+    height: 5vh;
+    background-color: #fcd069;
+}
+
+@media (max-width: 768px) {
+    #btnNav {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav li {
+        float: none;
+    }
+
+    #side_nav a{        
+        color: #ffffff;
+    }
+
+    .showSideBar .backdrop {
+        position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.3);
+        z-index: 10;
+    }
+
+    .showSideBar  #side_nav{       
+        background-color: rgba( 68, 68, 68 );
+        position: fixed;
+        right: 0;
+        top: 0; 
+        height: 100vh;
+        width: 60vw;
+        z-index: 11;
+    }
+    
+    .showSideBar #nav_btn{
+        color: #ffffff;
+    }
+
+    .showSideBar #menu {
+        display: block;
+    }
+
+    .showSideBar #btnNav span{
+        color: #ffffff;
+    }
+
+    .hideSideBar #side_nav {
+        background-color: #f5f5f5;
+    }
 }
