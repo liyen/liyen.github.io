@@ -1,3 +1,11 @@
+div {
+    text-align: justify;
+}
+
+h1{
+    text-align: left;
+}
+
 h2{
     display: block;
     background-color: transparent;
@@ -17,12 +25,69 @@ h3{
     background-repeat: no-repeat;
 }
 
-div {
-    text-align: justify;
-}
-
 .oneColumn {
     display: block;
     margin: auto;
     width: 90%;
+}
+
+/*** carousel controls ***/
+
+.carousel-control-prev {
+    left: -50px;
+    border-bottom: 0;
+    font-size: 40px;
+    color: #999999;
+    opacity: 1;
+}
+ 
+.carousel-control-next {
+    right: -50px;
+    border-bottom: 0;
+    font-size: 40px;
+    color: #999999;
+    opacity: 1;
+}
+
+.carousel-control-prev:focus {
+    color: #999999;
+}
+
+.carousel-control-next:focus {
+    color: #999999;
+}
+
+.carousel-control-prev:hover {
+    color: #444444;
+}
+
+.carousel-control-next:hover {
+    color: #444444;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #555555;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .carousel-control-prev {
+        left: -90px;
+        border-bottom: 0;
+        font-size: 40px;
+        color: #999999;
+        opacity: 1;
+    }
+     
+    .carousel-control-next {
+        right: -90px;
+        border-bottom: 0;
+        font-size: 40px;
+        color: #999999;
+        opacity: 1;
+    }
 }
