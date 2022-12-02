@@ -17,9 +17,6 @@
         <script src="https://kit.fontawesome.com/49349d0b08.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <button type="button" class="btnScrollToTop" id="btn-back-to-top" onclick="backToTop()">
-            <i class="fas fa-arrow-up"></i>
-        </button>
         <header>
             <a href="index.html"><h1>LI-YEN HUANG</h1></a>
             <div id="nav_wrapper">
@@ -42,9 +39,18 @@
             </div>
         </header>
         <main>
-            <div class="projBanner">
-                <h1>Contour Island Milling</h1>
-            </div>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h1>Contour Island Milling</h1>
+                        </div>
+                        <div class="col-md-4">                            
+                            <img src="img/IslandMilling/banner.png" class="oneColumn" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section>
                 <h2>Brief</h2>
                 <p>
@@ -62,7 +68,7 @@
                         </div>
                         <div class="col-md-4">
                             <h3>Timeline</h3>
-                            <p>2018/08-2018/09, 2 months</p>
+                            <p>2018/08 - 2018/09, 2 months</p>
                         </div>
                     </div>
                 </div>
@@ -77,7 +83,38 @@
                     <li>Evaluate Outcome: Ensure the program achieves its objectives after implementation.</li>
                 </ol>
                 <h3>Step 1: Clarify Specification</h3>
-                <h3>Step 2: Design Interface </h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>I asked customers and co-workers about the project's background and context in order to understand the specification of the project.</p>
+                        </div>
+                        <div class="col-12">
+                            <h4>User Flow</h4>
+                            <p>Analyzing each step of users’ workflow, I got an overview of the project. In the workflow, users would operate the human-machine interface (HMI) on the controller to set the processing parameter. The controller would convert machine instruction files. Finally, the users started the machining.</p>
+                            <img src="img/IslandMilling/userFlow.png" class="oneColumn" alt="user flow fig">
+                        </div>
+                        <div class="col-12">
+                            <h5>User Interface - Input Parameters</h5>
+                            <p>Users input raw material shape, island shape, and processing parameters.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/IslandMilling/Page1.png" class="img-fluid" alt="interface - input raw material shape parameters">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/IslandMilling/Page2.png" class="img-fluid" alt="interface - input island shape parameters">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/IslandMilling/Page3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-12">
+                            <p>After understanding the workflow, I could separate the process — “generate tool paths”, which I would be in charge. The next step is to know what is the input and the output.</p>
+                        </div>
+                        <div class="col-4 align-self-center">
+                            <img src="img/IslandMilling/inputOutput.svg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <h3>Step 2: Define Interface </h3>
                 <h3>Step 3: Develop algorithms</h3>
                 <h3>Step 4: Evaluate Outcome</h3>
             </section>
@@ -85,6 +122,11 @@
                 <h2>Reflection</h2>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p>Copyright &copy; 2022 &#x2022; Li Yen Huang</p>
+        </footer>
+        <button type="button" class="btnScrollToTop" id="btn-back-to-top" onclick="backToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </body>
 </html>

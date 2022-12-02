@@ -16,9 +16,6 @@
         <script src="https://kit.fontawesome.com/49349d0b08.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <button type="button" class="btnScrollToTop" id="btn-back-to-top" onclick="backToTop()">
-            <i class="fas fa-arrow-up"></i>
-        </button>
         <header>
             <!--<a href="index.html"><h1><mark>LI-YEN HUANG</mark></h1></a>-->
             <a href="index.html"><h1>LI-YEN HUANG</h1></a>
@@ -42,50 +39,57 @@
             </div>
         </header>
         <main>
-            <div class="flex-container" id="welcome">
+            <section class="flex-container">
                 <img src="img/lightbulb.svg" alt="" width="150" id="intro_icon">
                 <p id="intro">
                     Hello! I'm Li-Yen,<br>
                     a software engineer aiming to solve users' problems.<br>
                 </p>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <a href="ContourIslandMilling.html">
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="ContourIslandMilling.html">
+                                <div class="project mx-auto">
+                                    <div class="proj_img">
+                                        <img class="img-responsive" src="img/Proj_IslandMilling.svg" alt="Contour Island Milling">
+                                    </div>
+                                    <div class="proj_img_hover">
+                                        <img class="img-responsive" src="img/Proj_IslandMilling_Hover.svg" alt="Contour Island Milling">
+                                    </div>
+                                    <div class="proj_title">Contour Island Milling</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="LaserMarking.html">
+                                <div class="project mx-auto">
+                                    <div class="proj_img">
+                                        <img class="img-responsive" src="img/Proj_LaserMarking.svg" alt="laser marking">
+                                    </div>
+                                    <div class="proj_img_hover">
+                                        <img class="img-responsive" src="img/Proj_LaserMarking_Hover.svg" alt="laser marking">
+                                    </div>
+                                    <div class="proj_title">Project X</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
                             <div class="project mx-auto">
-                                <div class="proj_img">
-                                    <img class="img-responsive" src="img/Proj_IslandMilling.svg" alt="Contour Island Milling">
-                                </div>
-                                <div class="proj_img_hover">
-                                    <img class="img-responsive" src="img/Proj_IslandMilling_Hover.svg" alt="Contour Island Milling">
-                                </div>
-                                <div class="proj_title">Contour Island Milling</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="LaserMarking.html">
-                            <div class="project mx-auto">
-                                <div class="proj_img">
-                                    <img class="img-responsive" src="img/Proj_LaserMarking.svg" alt="laser marking">
-                                </div>
-                                <div class="proj_img_hover">
-                                    <img class="img-responsive" src="img/Proj_LaserMarking_Hover.svg" alt="laser marking">
-                                </div>
+                                <img src="img/Proj_Temp.svg" alt="Temp">
                                 <div class="proj_title">Project X</div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="project mx-auto">
-                            <img src="img/Proj_Temp.svg" alt="Temp">
-                            <div class="proj_title">Project X</div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
     </body>
-    <footer></footer>
+    <footer>
+        <p>Copyright &copy; 2022 &#x2022; Li Yen Huang</p>
+    </footer>
+    <button type="button" class="btnScrollToTop" id="btn-back-to-top" onclick="backToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </html>

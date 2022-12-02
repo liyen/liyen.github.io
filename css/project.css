@@ -21,13 +21,8 @@ div {
     text-align: justify;
 }
 
-section {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
 .oneColumn {
     display: block;
     margin: auto;
-    width: 80%;
+    width: 90%;
 }

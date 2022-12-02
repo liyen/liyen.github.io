@@ -34,13 +34,30 @@ body{
 
 /*** header ***/
 header{
-    display: block;
+    display: flex;
     padding-left: 8%;
     padding-right: 8%;
-    height: 60px;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 82vh;
+}
+
+footer{
+    flex: 1;
+    color: #444444;
+    text-align: center;
+    font-size: small;
+    height: 8vh;
+    padding-top: 0vh;
+    /*background-color: #fcd069;*/
+}
+
 
 header h1{
     display: inline-block;
@@ -131,18 +148,19 @@ nav ul{
 
 /*** main section ***/
 main{
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#welcome{
-    height: 40vh;
 }
 
 #intro{
@@ -187,12 +205,6 @@ main{
     width: 30vw;
 }
 
-footer{
-    margin-top: 10vh;
-    height: 5vh;
-    background-color: #fcd069;
-}
-
 @media (min-width: 768px) {
     #btnNav {
         display: none;
@@ -225,5 +237,10 @@ footer{
 
     nav li {
         float: left;
+    }
+
+    main{
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
