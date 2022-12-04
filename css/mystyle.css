@@ -282,3 +282,56 @@ section {
         padding-right: 15%;
     }
 }
+
+@media (min-width: 1400px) {
+    #btnNav {
+        display: none;
+    }
+
+    #avatar {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu a{
+        color: #aaaaaa;
+        text-decoration: none;
+        font-style: normal;
+        border: none;
+        padding: 10px 10px 5px 10px;
+        transition: color 0.3s;
+    }
+    
+    #menu a:hover{
+        color: #444444;
+        text-decoration: solid underline #444444 2px;
+        text-underline-offset: 10px;
+    }
+    
+    #menu a.active{
+        color: #444444;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+    nav ul{
+        width: auto;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    header{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    main{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}

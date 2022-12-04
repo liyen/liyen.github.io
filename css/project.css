@@ -8,21 +8,13 @@ h1{
 
 h2{
     display: block;
-    background-color: transparent;
-    background-image: linear-gradient( #f8cc65, #f8cc65);
-    background-position: bottom 20% left 0;
-    background-size: 100% 15%;
-    background-repeat: no-repeat;
+    border-bottom: 6px solid #f8cc65;
 }
 
 h3{
     display: block;
-    font-size: x-large;
-    background-color: transparent;
-    background-image: linear-gradient( #f8cc65, #f8cc65);
-    background-position: bottom 20% left 0;
-    background-size: 100% 5px;
-    background-repeat: no-repeat;
+    font-size: x-large;    
+    border-bottom: 3px solid #f8cc65;
 }
 
 .container{
