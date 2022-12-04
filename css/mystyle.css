@@ -65,9 +65,7 @@ footer{
     text-align: center;
     font-size: small;
     height: 8vh;
-    /*background-color: #fcd069;*/
 }
-
 
 #logo{
     display: inline-block;
@@ -75,13 +73,7 @@ footer{
     font-size: larger;
     line-height: 60px;
     font-weight: normal;
-
-    /*** underline of header ***/
-    background-image: linear-gradient( #f8cc65, #f8cc65);
-    background-position: bottom 40% left 10px;
-    background-size: 100% 20%;
-    padding-right: 10px;
-    background-repeat: no-repeat;
+    text-decoration: solid underline #fcd069 4px;
 }
 
 /*** navigation bar ***/
