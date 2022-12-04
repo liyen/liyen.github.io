@@ -69,7 +69,7 @@ footer{
 }
 
 
-header h1{
+#logo{
     display: inline-block;
     color: #444444;    
     font-size: larger;
