@@ -82,6 +82,10 @@ pre{
     width: 10vw;
 }
 
+.edit {
+    width: 80%;
+}
+
 .applicationIcon{
     width: 50%;
 }
@@ -106,4 +110,9 @@ pre{
     .drawicon {
         width: 6vw;
     }
+
+    .edit {
+        width: 60%;
+    }
+    
 }

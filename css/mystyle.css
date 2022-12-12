@@ -288,12 +288,6 @@ section {
         padding-left: 15%;
         padding-right: 15%;
     }
-
-    .oneColumn {
-        display: block;
-        margin: auto;
-        width: 80%;
-    }
 }
 
 @media (min-width: 1400px) {
@@ -346,11 +340,5 @@ section {
     main{
         padding-left: 20%;
         padding-right: 20%;
-    }
-
-    .oneColumn {
-        display: block;
-        margin: auto;
-        width: 70%;
     }
 }
