@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+@font-face {
+    font-family: "Virgil";
+    src: url("Virgil.woff2");
+    font-display: swap;
+}
 
 html {
     scroll-behavior: smooth;
@@ -194,6 +199,9 @@ section {
 
 .project{
     width: 90%;
+}
+
+.project a {
     text-decoration: none;
 }
 
@@ -202,7 +210,6 @@ section {
 }
 
 .project:hover .proj_title{
-    text-decoration: underline;
 }
 
 .project img{
@@ -281,6 +288,12 @@ section {
         padding-left: 15%;
         padding-right: 15%;
     }
+
+    .oneColumn {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -333,5 +346,11 @@ section {
     main{
         padding-left: 20%;
         padding-right: 20%;
+    }
+
+    .oneColumn {
+        display: block;
+        margin: auto;
+        width: 70%;
     }
 }

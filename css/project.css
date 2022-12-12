@@ -71,6 +71,21 @@ pre{
     border-radius: 10px;
 }
 
+/*** Laser Marking ***/
+.drawcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.drawicon {
+    width: 10vw;
+}
+
+.applicationIcon{
+    width: 50%;
+}
+
 @media (min-width: 768px) {
     .carousel-control-prev {
         left: -90px;
@@ -86,5 +101,9 @@ pre{
         font-size: 40px;
         color: #999999;
         opacity: 1;
+    }
+
+    .drawicon {
+        width: 6vw;
     }
 }

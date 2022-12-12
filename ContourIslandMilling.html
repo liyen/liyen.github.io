@@ -44,7 +44,7 @@
                         </div>
                         <ul id="menu">
                             <li><a href="index.html" class="active">Works</a></li>
-                            <li><a href="UnderConstruction.html">CV</a></li>
+                            <li><a href="files/Resume_Li_Yen_Huang.pdf" target="_blank">CV</a></li>
                             <li><a href="about.html">About</a></li>
                         </ul>
                     </nav>
@@ -54,9 +54,10 @@
         <main>
             <section>
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-md-7">
                             <h1>Contour Island Milling</h1>
+                            <p>Conversational CAD/CAM for Island Milling</p>
                         </div>
                         <div class="col-md-5">                            
                             <img src="img/IslandMilling/banner.png" class="oneColumn" alt="">
@@ -69,12 +70,12 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
+                            <a href="img/IslandMilling/brief.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/brief.svg" alt="" ></a>
+                        </div>
+                        <div class="col-12">
                             <p>
                                 This project provided a built-in CAD/CAM (computer-aided design/computer-aided manufacturing) program in milling machine controllers. There are several fully featured CAD/CAM software on the market. However, since that software could offer so much features, they demand long training time for users and also are very expensive. Sometimes, the customers only want to have some light-weighted solutions in a restricted scenario. In this project, our customers want to manufacture an island feature on materials. We made a built-in CAD/CAM in the controllers. Users don’t need to use a computer to generate machine instructions. They could do the task by using a conversational window on the controller. It can simplify the process of manufacturing.
                             </p>
-                        </div>
-                        <div class="col-12">
-                            <a href="img/IslandMilling/brief.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/brief.svg" alt="" ></a>
                         </div>
                         <div class="col-md-4">
                             <h3>My Role</h3>
@@ -199,15 +200,15 @@
                             <p>Break down the algorithm into smaller parts and find solutions for each piece. It could separate into three parts — offset geometry, clipping geometry, and sorting the segment in the order of the same corner first. Using a similar process, I defined each part's inputs and outputs. Then, I researched how to solve each part individually. For example, offset geometry was a laborious problem to be solved generally. I found an open-source code and implemented it since I didn't want to recreate the wheel. Using established stable libraries could accelerate the development process. Moreover, I devised a method to sort the path segments in the same corner first strategy. In the end, I assembled each part and completed the task.</p>
                         </div>
                         <div class="col-6 col-md-3">
-                            <h4>Offset Geometry</h4>
+                            <p>Offset Geometry</p>
                             <a href="img/IslandMilling/offsetGeometry.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/offsetGeometry.svg" alt="" ></a>
                         </div>
                         <div class="col-10 col-md-6">
-                            <h4>Clip Geometry</h4>
+                            <p>Clip Geometry</p>
                             <a href="img/IslandMilling/clipGeometry.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/clipGeometry.svg" alt="" ></a>
                         </div>
                         <div class="col-6 col-md-3">
-                            <h4>Sort Path Segments</h4>
+                            <p>Sort Path Segments</p>
                             <a href="img/IslandMilling/sortSegments.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/sortSegments.svg" alt="" ></a>
                         </div>
                     </div>
@@ -223,8 +224,16 @@
             </section>
             <section>
                 <h2>Reflection</h2>
-                <h4>Define Interface First</h4>
-                <p>Defining a clear software interface could benefit the later collaboration with other developers. Providing sample code is helpful for others to use. My colleague said he could conveniently use the sample code to develop his part. He felt he could work efficiently. Also, since I had written thorough testing cases, he was confident to implement my code into the final project.</p>
+                <!--<h3>Define Interface First</h3>-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul>
+                                <li><p>Defining a clear software interface could benefit the later collaboration with other developers. Providing sample code is helpful for others to use. My colleague said he could conveniently use the sample code to develop his part. He felt he could work efficiently. Also, since I had written thorough testing cases, he was confident to implement my code into the final project.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                
             </section>
         </main>
         <footer>

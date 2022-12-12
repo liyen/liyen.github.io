@@ -3,25 +3,290 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+        <!-- lightbox  -->
+        <!-- the code is from the project of lightbox by ashleydw -->
+        <!-- the lightbox project is under MIT license -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer">        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" integrity="sha512-YibiFIKqwi6sZFfPm5HNHQYemJwFbyyYHjrr3UT+VobMt/YBo1kBxgui5RWc4C3B4RJMYCdCAJkbXHt+irKfSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- free icon -->
+        <script src="https://kit.fontawesome.com/49349d0b08.js" crossorigin="anonymous"></script>
+
+        <!-- java script -->        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
         <title>LI-YEN HUANG</title>
         <link rel="icon" href="img/title_icon.svg" type="image/svg">
+
+        <!-- css & java script -->
         <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="stylesheet" href="css/project.css">
+        <script src="js/script.js"></script>
     </head>
     <body>
         <header>
             <a href="index.html" id="logo">LI-YEN HUANG</a>
-            <nav>
-                <a href="index.html" class="active">Works</a>
-                <a href="">CV</a>
-                <a href="about.html">About</a>
-            </nav>
+            <div id="nav_wrapper">
+		        <div class="backdrop" onclick="hideRightSideMenu()"></div>
+                <div id="side_nav">
+                    <nav>
+                        <div id="btnNav">
+                            <input type="checkbox" id="nav_btn" onclick="clickNavBtn()">
+                            <label for="nav_btn"><span><i class="fa-solid fa-bars fa-xl" id="navIcon"></i></span></label>
+                        </div>
+                        <div id="avatar">
+                        </div>
+                        <ul id="menu">
+                            <li><a href="index.html" class="active">Works</a></li>
+                            <li><a href="files/Resume_Li_Yen_Huang.pdf" target="_blank">CV</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
         <main>
-            <img src="img/LaserMarkingApplication.png" alt="laser application: barcode, keyboard, customized gift">
+            <section>
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <div class="banner">
+                                <h1>Syntec Laser Marking</h1>
+                                <p>Software Development for Laser Marking System</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">                            
+                            <img src="img/LaserMarking/banner.svg" class="oneColumn" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Brief</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="img/LaserMarking/brief.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/LaserMarking/brief.svg" alt="" ></a>
+                        </div>
+                        <div class="col-12">
+                            <p>Laser marking uses a focused laser beam to create a permanent mark on object surfaces. The laser marking is efficient, low in pollution, and applicable to various materials. Since laser marking can create high-precision figures, it is popular in both industrial production and commercial products, such as industrial components, packaging, keyboard, home decor gifts, etc.</p>
+                        </div>
+                    </div>
+                    <!--<div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <a href="img/LaserMarking/LaserMarkingApplication.png" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/LaserMarking/LaserMarkingApplication.png" alt="laser marking application: barcode, keyboard, customized gift" ></a>
+                        </div>
+                    </div>-->                    
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <p>The system included laser source, galvo scanner, controller, and application software. My responsibility was to develop the application software.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <a href="img/LaserMarking/components.png" data-toggle="lightbox" data-gallery="fig"><img src="img/LaserMarking/components.png" alt="" class="oneColumn"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>My Role</h3>
+                            <p>Product Engineer</p>
+                            <p></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Skill</h3>
+                            <ul>
+                                <li>C#</li>
+                                <li>G-code</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Timeline</h3>
+                            <p>2016/5 - 2019/5, 3 years</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Introduction</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>xxxx</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8">
+                            <a href="img/LaserMarking/SyntecLaserMarking.png" data-toggle="lightbox" data-gallery="fig"><img src="img/LaserMarking/SyntecLaserMarking.png" alt="user interface" class="oneColumn"></a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Key Feature#1 Draw</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h4>Import Files</h4>
+                            <p>DXF files and pictures</p>
+                            <div class="flex-container drawcontainer">
+                                <a href="img/LaserMarking/dxf.png" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/dxf.png" alt="dxf file"></a>
+                                <a href="img/LaserMarking/picture.svg" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/picture.svg" alt="picture"></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>Generate Barcode</h4>
+                            <p>1D barcodes and 2D barcodes (e.g. QR code, data matrix, etc.)</p>
+                            <div class="flex-container drawcontainer">
+                                <a href="img/LaserMarking/2dbarcode.svg" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/2dbarcode.svg" alt="2d barcode"></a>
+                                <a href="img/LaserMarking/1dbarcode.svg" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/1dbarcode.svg" alt="1d barcode"></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>Draw Geometry</h4>
+                            <p>rectangle, ellipse, polyline, etc.</p>
+                            <div class="flex-container drawcontainer">
+                                <a href="img/LaserMarking/rectangle.svg" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/rectangle.svg" alt="rectangle"></a>
+                                <a href="img/LaserMarking/circle.svg" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/circle.svg" alt="circle"></a>
+                                <a href="img/LaserMarking/polyline.svg" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/polyline.svg" alt="polyline"></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>Create Text</h4>
+                            <p>single line font and outline font</p>             
+                            <div class="flex-container drawcontainer">
+                                <a href="img/LaserMarking/outlineText.svg" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/outlineText.svg" alt="outline font"></a>
+                                <a href="img/LaserMarking/singleLineText.svg" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/singleLineText.svg" alt="single line font"></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>Serial Number</h4>
+                            <p>Users can customized serial number rules. The number would add incrementally on each execute.</p>                       
+                            <div class="flex-container drawcontainer">
+                                <a href="img/LaserMarking/serial.png" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/serial.png" alt="serial barcode"></a>
+                                <a href="img/LaserMarking/date.png" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/date.png" alt="date"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Key Feature#2 Edit</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!--<div class="col-12 col-md-4">
+                            <h4>Select</h4>
+                            <a href="img/LaserMarking/select.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/LaserMarking/select.svg" alt="select"></a>
+                        </div>-->
+                        <div class="col-12 col-md-6">
+                            <h4>Stroke</h4>
+                            <p>Fill the shape. The stroke can set the scan angle, incremental angle, repeated times, etc</p>
+                            <a href="img/LaserMarking/stroke.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/LaserMarking/stroke.svg" alt="stroke"></a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>Curved Text</h4>
+                            <p>Bend text around arc.</p>
+                            <a href="img/LaserMarking/curvedText.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/LaserMarking/curvedText.svg" alt="curved text"></a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>Cycloid Line</h4>
+                            <p>Turn lines into cycloid lines. It can have a widening effect on the pattern.</p>
+                            <a href="img/LaserMarking/cycloid.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/LaserMarking/cycloid.svg" alt="cycloid line"></a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4>Combine Geometry</h4>
+                            <p>Combine multiple shapes.</p>
+                            <a href="img/LaserMarking/combineGeometry.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/LaserMarking/combineGeometry.svg" alt="combine geometry"></a>
+                        </div>
+                    </div>
+                </div>                
+                <h3>Key Feature#3 Execute</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Setting Processing Parameters and Laser Source</h4>
+                            <p>Select laser source type and set processing parameters (e.g., laser power, frequency, etc.)</p>
+                        </div>
+                        <div class="col-12">
+                            <h4>Red Light Preview</h4>
+                            <p>Emit red light for position the object under the workspace.</p>
+                        </div>
+                        <div class="col-12">
+                            <h4>Execution</h4>
+                            <ul>
+                                <li>Stand-along Scenario: Connect to the controller and execute.</li>
+                                <li>Factory Scenario: Put the execution file into the controller and trigger from the controller. When Integrating the marking system into production line, the laser marking system can be triggered by other sensors, such as the camera captured the object.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Case Study: Large Area Synchronous Laser Marking</h2>
+                <h3>Situation</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>The laser marking workspace is limited by its mirror system. However, customers want to make a larger pattern, such as marking patterns on door boards. The solution of enlarging the workspace is embeded the laser marking system on a 3-axis machine. The machine can move the laser marking system around to process.</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Goal</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>The laser marking workspace is limited by the galvo scanner module in 100 mm * 100 mm. The goal is to enlarge the workspace. (constrained by the machine workspace)</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Method</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Through some investigation, there are two approaches:</p>
+                            <p>Approach#1 Positioning Marking <i class="fa-solid fa-circle-xmark"></i><br>
+                                <ul>
+                                    <li>Split the pattern into small regions which are equal to the workspace.</li>
+                                    <li>Move the laser marking module to each region to engrave the pattern.</li>
+                                </ul>
+                                → Since the distorsion of lens, the margin of neighbor pattern would easily have gaps.
+                            </p>
+                            <p>Approach#2 Synchronous Laser Marking <i class="fa-solid fa-circle-check"></i><br>
+                                <ul>
+                                    <li>Synchronize the axis motion planning and laser marking path. The marking path can continuous without gaps. It could eliminate the gap between different regions.</li>
+                                </ul>
+                            </p>
+                            <p>Next, My challenge is generating tool paths for both machine and the laser marking system and allowing them to coordinate smoothly.</p>
+                            <p>In the beginning, I tried to visualize the problem. I drew the laser marking paths and expected machine paths, and an idea came into my mind. The problem was similar to polyline simplifications. The laser marking path was the original path; the machine instruction path was the simplified path. To build on the initial idea, I further researched several polyline simplification algorithms and examined them with some criteria. For example, the algorithms could easily control the distance between the original line and the simplified line, so the machine path could ensure it covers the laser system path/workspace. Later, to coordinate both paths, the processing parameter should be allocated to each segment appropriately.</p>
+                            <p>Also, to shorten the development process, I developed simulation software to examine the result. (evaluating every modification on machines would waste a lot of time) In the end, I tested the file on the real machine and checked it could pass the designed test cases.</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Result</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Success to complete the algorithm and complete the evaluation on the machine. This feature attracted new customers for the company. To accelrate the processing speed, the machine and the laser system could not coordinate properly. It required further refinement.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Reflection</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul>
+                                <li>During the whole develop process, I developed several user interfaces, such as zoom in/out, select object, object browsers, etc. In the initial stage, I defined the specification by my own idea. But occationlly I got feedback that users felt they cannot complete thier tasks easily or some unsatisfying. After a while, when ever I had a new development issue, I would draw wireframe or built interactive prototypes for user. I could get feedback at the earlier stage of development. It helped me designed a practical interfaces efficiently.</li>
+                                <li>In the Large Area Synchronous Laser Marking project, planning the machine path required the knowledge of motion control. In the begining of the project, we asked for some resources. The research department spent some time to teach our team about the knowledge of motion planning. With the same knowledge base, it was really helpful to streamline the process of later collaboration.</li>
+                                <li>Finding early adopters was critical to product development. Since the laser marking market was highly competitive, the early adopters assisted us in knowing which features were attractive to new clients. They played an important role in the decision-making of the product planning strategy. Our team built critical features based on their opinions to draw potential customers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <p>Copyright &copy; 2022 &#x2022; Li Yen Huang</p>
@@ -29,5 +294,18 @@
         <button type="button" class="btnScrollToTop" id="btn-back-to-top" onclick="backToTop()">
             <i class="fas fa-arrow-up"></i>
         </button>
+
+        <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+        <!-- lightbox -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        <script>
+            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+        </script>
     </body>
 </html>
