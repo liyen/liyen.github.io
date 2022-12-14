@@ -24,7 +24,6 @@ h3{
 }
 
 /*** carousel controls ***/
-
 .carousel-control-prev {
     left: -50px;
     border-bottom: 0;
@@ -79,6 +78,7 @@ pre{
 }
 
 .drawicon {
+    display: flex;
     width: 10vw;
 }
 

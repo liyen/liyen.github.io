@@ -124,11 +124,11 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-8">
-                            <a href="img/LaserMarking/SyntecLaserMarking.png" data-toggle="lightbox" data-gallery="fig"><img src="img/LaserMarking/SyntecLaserMarking.png" alt="user interface" class="oneColumn"></a>
+                            <a href="img/LaserMarking/SyntecLaserMarking.png" data-toggle="lightbox" data-gallery="fig"><img src="img/LaserMarking/SyntecLaserMarking.png" alt="user interface" class="oneColumn pb-5"></a>
                         </div>
                     </div>
                 </div>
-                <h3>Key Feature#1 Draw</h3>
+                <h3>Key Feature 1: Draw</h3>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-md-6">
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <h3>Key Feature#2 Edit</h3>
+                <h3>Key Feature 2: Edit</h3>
                 <div class="container-fluid">
                     <div class="row">
                         <!--<div class="col-12 col-md-4">
@@ -203,7 +203,7 @@
                         </div>
                     </div>
                 </div>                
-                <h3>Key Feature#3 Execute</h3>
+                <h3>Key Feature 3: Execute</h3>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
@@ -223,17 +223,17 @@
                     <div class="row">
                         <div class="col-12">
                             <h4>Execution</h4>
-                            <ul>
+                            <ol>
                                 <li>Stand-along Scenario: Connect to the controller and execute.</li>
                                 <li>Industrial Scenario: Put the execution files into the controller and trigger. When integrating the marking system into production lines, the laser marking system can be triggered by other sensors, such as when the camera captures the object.</li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
                 <h2>Case Study: Large Area Synchronous Laser Marking</h2>
-                <h3>Situation</h3>
+                <h3>Problem Statement</h3>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
@@ -272,7 +272,7 @@
                             <a href="img/LaserMarking/PostioningMarking.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/LaserMarking/PostioningMarking.svg" alt="positioning marking"></a>
                         </div>
                         <div class="col-12">
-                            <p>→ Since the lens distortion, the neighboring patterns' margins would easily have gaps.</p>
+                            <p>→ Because of the lens distortion, the neighboring patterns' margins would easily have gaps.</p>
                         </div>
                         <div class="col-12 col-md-6">
                             <a href="img/LaserMarking/lensDistortion.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/LaserMarking/lensDistortion.svg" alt="lens distortion makes gaps between markings"></a>
@@ -291,7 +291,7 @@
                             <p>→ Since the patterns would be marked continuously, they would not have neighboring gaps.</p>
                         </div>
                         <div class="col-12">
-                            <p>Next, My challenge is generating tool paths for both machine and the laser marking system and allowing them to coordinate smoothly.</p>
+                            <p>Next, the challenge was generating tool paths for both machine and the laser marking system and allowing them to coordinate smoothly.</p>
                             <p>In the beginning, I tried to visualize the problem. I drew the laser marking paths and expected machine paths, and an idea came to mind. The problem was similar to polyline simplifications. The laser marking path was the original path; the machine instruction path was the simplified path. To build on the initial idea, I further researched several polyline simplification algorithms and examined them with some criteria. For instance, the algorithms could easily control the distance between the original lines and the simplified lines, so the laser marking path could ensure in the workspace of the laser marking module while the 3-axis machine moving. Later, to coordinate both paths, the velocities should be allocated to each segment appropriately.</p>
                             <p>Lastly, I developed simulation software to examine the result in order to shorten the development process. (evaluating every modification on machines would waste a lot of time) Ultimately, I tested the execution files on the machine and passed the designed test cases.</p>
                         </div>
