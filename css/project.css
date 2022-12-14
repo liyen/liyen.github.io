@@ -72,13 +72,11 @@ pre{
 
 /*** Laser Marking ***/
 .drawcontainer {
-    display: flex;
-    flex-direction: row;
     justify-content: left;
 }
 
 .drawicon {
-    display: flex;
+    display: inline-block;
     width: 10vw;
 }
 

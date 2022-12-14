@@ -131,7 +131,7 @@
                         </div>
                         <div class="col-10 col-md-8">
                             <!-- Carousel -->
-                            <div id="imgCarousel" class="carousel slide" data-interval="false">
+                            <div id="imgCarousel" class="carousel slide pb-5" data-interval="false">
                                 <ol class="carousel-indicators">
                                     <li data-target="#imgCarousel" data-slide-to="0" class="active"></li>
                                     <li data-target="#imgCarousel" data-slide-to="1"></li>
@@ -201,17 +201,23 @@
                         <div class="col-12">
                             <p>Break down the algorithm into smaller parts and find solutions for each piece. It could separate into three parts — offset geometry, clipping geometry, and sorting the segment in the order of the same corner first. Using a similar process, I defined each part's inputs and outputs. Then, I researched how to solve each part individually. For example, offset geometry was a laborious problem to be solved generally. I found an open-source code and implemented it since I didn't want to recreate the wheel. Using established stable libraries could accelerate the development process. Moreover, I devised a method to sort the path segments in the same corner first strategy. In the end, I assembled each part and completed the task.</p>
                         </div>
-                        <div class="col-6 col-md-3">
-                            <p>Offset Geometry</p>
-                            <a href="img/IslandMilling/offsetGeometry.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/offsetGeometry.svg" alt="" ></a>
+                        <div class="col-6 col-md-3 d-flex align-items-start flex-column">
+                            <div><p>Offset Geometry</p></div>                            
+                            <div class="mt-auto">
+                                <a href="img/IslandMilling/offsetGeometry.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/offsetGeometry.svg" alt="" ></a>
+                            </div>
                         </div>
-                        <div class="col-10 col-md-6">
-                            <p>Clip Geometry</p>
-                            <a href="img/IslandMilling/clipGeometry.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/clipGeometry.svg" alt="" ></a>
+                        <div class="col-10 col-md-6 d-flex align-items-start flex-column">
+                            <div><p>Clip Geometry</p></div>
+                            <div class="mt-auto">
+                                <a href="img/IslandMilling/clipGeometry.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/clipGeometry.svg" alt="" ></a>
+                            </div>
                         </div>
-                        <div class="col-6 col-md-3">
-                            <p>Sort Path Segments</p>
-                            <a href="img/IslandMilling/sortSegments.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/sortSegments.svg" alt="" ></a>
+                        <div class="col-6 col-md-3 d-flex align-items-start flex-column">
+                            <div><p>Sort Path Segments</p></div>
+                            <div class="mt-auto">
+                                <a href="img/IslandMilling/sortSegments.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/sortSegments.svg" alt="" ></a>
+                            </div>
                         </div>
                     </div>
                 </div>
