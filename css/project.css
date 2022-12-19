@@ -19,6 +19,11 @@ h3{
     margin: 0;
 }
 
+.embedpdf {
+    width: 100%;
+    height: 100vh;
+}
+
 /*** carousel controls ***/
 .carousel-control-prev {
     left: -50px;
