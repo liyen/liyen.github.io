@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+        <!-- lightbox  -->
+        <!-- the code is from the project of lightbox by ashleydw -->
+        <!-- the lightbox project is under MIT license -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer">        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" integrity="sha512-YibiFIKqwi6sZFfPm5HNHQYemJwFbyyYHjrr3UT+VobMt/YBo1kBxgui5RWc4C3B4RJMYCdCAJkbXHt+irKfSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- free icon -->
+        <script src="https://kit.fontawesome.com/49349d0b08.js" crossorigin="anonymous"></script>
+
+        <!-- java script -->        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+        <title>LI-YEN HUANG</title>
+        <link rel="icon" href="img/title_icon.svg" type="image/svg">
+
+        <!-- css & java script -->
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="stylesheet" href="css/project.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" id="logo">LI-YEN HUANG</a>
+            <div id="nav_wrapper">
+		        <div class="backdrop" onclick="hideRightSideMenu()"></div>
+                <div id="side_nav">
+                    <nav>
+                        <div id="btnNav">
+                            <input type="checkbox" id="nav_btn" onclick="clickNavBtn()">
+                            <label for="nav_btn"><span><i class="fa-solid fa-bars fa-xl" id="navIcon"></i></span></label>
+                        </div>
+                        <div id="avatar">
+                        </div>
+                        <ul id="menu">
+                            <li><a href="index.html" class="active">Works</a></li>
+                            <li><a href="files/Resume_Li_Yen_Huang.pdf" target="_blank">CV</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <div class="banner">
+                                <h1>Turn-Milling CAD/CAM</h1>
+                                <p>Product Design for Turn-Milling CAD/CAM (Computer-Aided Design And Manufacturing)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">                            
+                            <img src="img/TurnMilling/banner.svg" class="oneColumn" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Brief</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="img/TurnMilling/brief.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/TurnMilling/brief.svg" alt="" ></a>
+                        </div>
+                        <div class="col-12">
+                            <p></p>
+                        </div>
+                        <div class="col-12">
+                            <p>*Because of the non-disclosure agreement (NDA), the real interface, market information, software structure cannot be revealed in this portfolio.</p>
+                            <p>There are two common types of CNC (computer numerical control) machines: lathe and milling machines. If a workpiece has turning and milling features, the workpiece has to be processed separately on lathe and milling machines. Since it has to be removed and installed on another machine, the process lowered efficiency and precision. The turn-milling machine integrates two processing methods so that the workpiece can be processed on one machine. As a result, turn-milling machines can bring higher efficiency and precision.</p>
+                            <p>Syntec Technology Co., Ltd., Taiwan’s leading machine controller manufacturing company, gained a high market share in the turn-milling machine in China. The company paid a high cost for customer service since the clients often used improper NC files (machine instruction files) on the controller. Therefore, Syntec wanted to offer a solution for the clients to effortlessly generate NC files for machining.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>My Role</h3>
+                            <p>Product Engineer</p>
+                            <p></p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Skill</h3>
+                            <ul>
+                                <li>C++</li>
+                                <li>Open Cascade</li>
+                                <li>Qt</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Timeline</h3>
+                            <p>2019/6 - 2020/12, 1.5 years</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Background</h2>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <a href="img/TurnMilling/PainPoint.png" data-toggle="lightbox" data-gallery="fig"><img src="img/TurnMilling/PainPoint.png" alt="user guesses what the reason is" class="oneColumn pb-3"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>There were three reasons for processing failure: NC file, controller, and machine. When users produced unexpected shapes or poor surface quality, it was not easy for them to identify the cause of the failure. Due to the good customer service provided by Syntec, customers often request services for troubleshooting. Field application engineers spend a long time reproducing and analyzing the problems. The company paid a high cost for customer service, even if the problems were not caused by the controller. By the record of customer services, improper NC files were high frequency reasons.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <a href="img/TurnMilling/FAE.png" data-toggle="lightbox" data-gallery="fig"><img src="img/TurnMilling/FAE.png" alt="FAEs feel frustrated" class="oneColumn pb-3"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>The CAD/CAM software was for assisting users in producing NC files. Because of complexity, the turn-milling CAD/CAM software was generally not easy-to-use for the novice. For example, it was necessary to set parameters for different machines, so users must have detailed knowledge of the machines. Some clients who lacked specific knowledge often generated inappropriate NC files due to misuse of the software. As a result, they processed unexpected workpieces.</p>
+                            <p>In order to solve the problems, the company planned to offer CAD/CAM software for customers. Since the software guided the user to generate the NC file compatible with our controllers, the cost of tutorials and customer service could be reduced. In addition, the integration experience would also increase the customer's stickiness to our brand.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Initial Phase</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Initially, since I had no idea about the product, I collected information to get an overview. I iterated between the investigation of competitive products and visiting clients to draw up a blueprint of the product in my mind. As a result, I provided the company with available information to reach a decision for the next step.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10">
+                            <a href="img/TurnMilling/InitialPhase.png" data-toggle="lightbox" data-gallery="fig"><img src="img/TurnMilling/InitialPhase.png" alt="Iterate between investigation and visiting clients" class="oneColumn"></a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Investigate Competitive Products</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>I researched multiple turn-milling CAD/CAM on the market and categorized information in some aspects:</p>
+                            <ul>
+                                <li>Version:
+                                    <ul>
+                                        <li>PC version: the PC version offered comprehensive and flexible features. After generating NC files, users had to transfer the files into the controller to process. It can create files compatible with different types of machines by responding machine settings.</li>
+                                        <li>Controller version: it is a conversational window on the controller. The interface guides users to generate workpieces. Since the software was embedded in the controller, users don’t have to set complicated machine settings on the software.</li>
+                                        <li>Toolpath Generator Engine: The kernel of toolpaths calculation without user interface.</li>
+                                    </ul>
+                                </li>
+                                <li>Cutting Toolpath Types: rough turning, finish turning, grooving, drilling, pocketing, etc.</li>
+                                <li>Module Planning:
+                                    <ul>
+                                        <li>CAD: create 3D models of the workpiece.</li>
+                                        <li>CAM: generate tool paths for each operation.</li>
+                                        <li>Tool Manager: manage tool library.</li>
+                                        <li>Post: Postprocess for generating NC files responding to specific machines.</li>
+                                        <li>Simulation: Simulate the machine's movement and detect collision.</li>
+                                    </ul>
+                                </li>
+                                <li>Sales: price, perpetual licenses v.s. subscription, extension modules, and after-sale service (e.g., machine setting, tutorial, customized project, etc.)</li>
+                                <li>Compare the workflow of the same workpiece on different products.</li>
+                                <li>Highlight: easy-to-build 3D models, compatible machine types, etc.</li>
+                            </ul>
+                            <p>→ Above information allowed me to assist the company in decision making and to have reference to design software.</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Visit Clients</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Since the cooperating customers were rich-in practical experience in manufacturing, I visited clients and conducted interviews. The clients displayed how they generated NC files and put the file on machines to execute. I observed some details which were not easy to know when only asking online. For instance, the clients used the software in their office and transferred the files to the plant. File management was one of the problems. Moreover, highly experienced operators generated some complicated NC files without the assistance of CAD/CAM software. It allows me to consider the difference in the ability of users.</p>
+                            <p>Also, some clients were experienced in using CAD/CAM software. I prepared some questions about their usage habits and the reason of choosing specific software. Besides, the clients provided me for some common workpiece they produced via turn-milling machine. Those workpieces enables me to examine the competitive products by try to generate NC files for them. I evaluated the integrated experience on operating the products.</p>
+                            <p>→ Their feedback allows me to design the milestone for each stage of development process. Set measurable design target for each stage and keep it attractive for clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Decide the Project Direction</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Even though cooperation with other CAD/CAM software was an option, our teamed considered the acceptable price range and sales model. Ultimately, our team decided to develop the software on our own and integrated the commercialized toolpath engine to develop software.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Software Design</h2>
+                <h3>Feature Set</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Based on previous investigation, I designed the feature set as a reference to purchase the toolpath engine and to develop the software.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <a href="img/TurnMilling/FeatureSet.png" data-toggle="lightbox" data-gallery="fig"><img src="img/TurnMilling/FeatureSet.png" alt="Iterate between investigation and visiting clients" class="oneColumn"></a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Design Workflow and Wireframe</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>I defined the workflow to perform the task:</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <a href="img/TurnMilling/Workflow.png" data-toggle="lightbox" data-gallery="fig"><img src="img/TurnMilling/Workflow.png" alt="Workflow" class="oneColumn"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Also, I drew the layout as a rough draft. Display layouts allow teams to discuss and provide constructive feedback practically. For example, a co-worker pointed out, “It should add some illustrations to describe the meaning of parameters.” Or, he said, “There are too many options. The menu bar should hide some items below to make a clear interface.”</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <a href="img/TurnMilling/Layout.png" data-toggle="lightbox" data-gallery="fig"><img src="img/TurnMilling/Layout.png" alt="Layout Prototype" class="oneColumn"></a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Plan the Software Structure</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>The software structure planning facilitated our team to think about the big picture for our programs. In the implementation phase, we cooperated with another team. The structure diagram helped us to discuss and distribute the workload. It was an effective tool for defining the expected interactions between each component and delegating responsibility to each component clearly.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Implementation</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>In the development process, involving users in the process was helpful. To get user feedback as quickly as possible, the main idea to set the milestone of each step was to coherent the whole process first. To be more specific, I chose to complete the entire workflow for an easy task rather than implementing many complex operations at one time.</p>
+                            <p>For example, generating nc file requires steps: bulid 3D model, detect features, define operations, build machine, ...etc. </p>
+                        </div>
+                        <div class="col-12">
+                            <p>Follow the main idea of steamlineing the process at first. To simplify the initial devleopment process, I focused on completing rough turning task:</p>
+                        </div>
+                        <div class="col-12">
+                            <table class="table table-borderless">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Do's</th>
+                                    <th scope="col">Don'ts (put tasks later)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Feature Detection</th>
+                                        <td>External Turning</td>
+                                        <td>Internal Turning, Hole,...</td>
+                                      </tr>
+                                  <tr>
+                                    <th scope="row">Operations</th>
+                                    <td>Rough Turning</td>
+                                    <td>Finish Turning, Pocketing,...</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Machine Setting</th>
+                                    <td>2-axis lathe</td>
+                                    <td>Support C, Y, or B Axis,...</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">...</th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="col-12">
+                            <p>The plan allowed us to provide trial version for users efficiently. By the users’ feedback, we modified our products to approach the design goal.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Result</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>When our team had implemented the product for one year, the product achieved the first year goal:</p>
+                            <ul>
+                                <li>Produce NC files for rough turning, finish turning, drilling, and engraving.</li>
+                                <li>Simulate the multiple operations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Reflection</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul>
+                                <li><p>To complete the whole process first other than provide multiple features, the planning allowed useres to get involve in the development process easily. Our team heard the feedback from users directly. Their opinions helped us to adust the software design and the prioirity of each small task.</p></li>
+                                <li><p>In this project, I had the opportunity to collect many different user profiles. I used this information to modify the design of the software. For example, the experts and novices had different knowledge of manufacturing. The software hid some options for novice users in order to reduce their mental load. However, the software was flexible for expertise, so they could optimize the manufacturing efficiency.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2022 &#x2022; Li Yen Huang</p>
+        </footer>
+        <button type="button" class="btnScrollToTop" id="btn-back-to-top" onclick="backToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+        <!-- lightbox -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        <script>
+            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+        </script>
+    </body>
+</html>
