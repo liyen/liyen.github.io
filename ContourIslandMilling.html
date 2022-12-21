@@ -74,7 +74,7 @@
                         </div>
                         <div class="col-12">
                             <p>
-                                This project provided a built-in CAD/CAM (computer-aided design/computer-aided manufacturing) program in milling machine controllers. There are several fully featured CAD/CAM software on the market. However, since that software could offer so much features, they demand long training time for users and also are very expensive. Sometimes, the customers only want to have some light-weighted solutions in a restricted scenario. In this project, our customers want to manufacture an island feature on materials. We made a built-in CAD/CAM in the controllers. Users don’t need to use a computer to generate machine instructions. They could do the task by using a conversational window on the controller. It can simplify the process of manufacturing.
+                                This project aimed to provide a built-in CAD/CAM (computer-aided design/computer-aided manufacturing) program in milling machine controllers. There are several fully featured CAD/CAM software on the market. However, since software could offer so much features, they not only demand long training time for users but also are very expensive. In this project, our customers wanted to manufacture an island feature on materials without any additional features. We made a built-in CAD/CAM in the controllers. Users didn’t need to use a computer to generate machine instructions. They could do the task by using a conversational window on the controller, simplifying the process of manufacturing.
                             </p>
                         </div>
                         <div class="col-md-3">
@@ -106,33 +106,33 @@
                 <h2>Workflow</h2>
                 <a href="img/IslandMilling/workflow.png" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/workflow.png" alt="" ></a>
                 <ol>
-                    <li>Clarify Specification: After collecting all information and customer needs, I would define the specification and requirements of the project.</li>
-                    <li>Define Interface: defining the software interface first helps collaborate with others.</li>
+                    <li>Define Specifications: After collecting all information and customer needs, I would define the specification and requirements of the project.</li>
+                    <li>Design Programming Interface: designing the software interface first helps collaborate with others.</li>
                     <li>Develop Algorithms: Analyze and break down the problems. Then, find solutions to each small part.</li>
-                    <li>Evaluate Outcome: Ensure the program achieves its objectives after implementation.</li>
+                    <li>EEvaluate Outcome: Ensure the final program achieves its objectives.</li>
                 </ol>
-                <h3>Step 1: Clarify Specification</h3>
+                <h3>Step 1: Define Specification</h3>
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <p>I collaborated with a product engineer to develop the project. At the beginning of the development, I clarified the goal of my work. I asked the customers and discussed with co-workers to know the background and context of the project. I could know the objective of the project and separate the tasks.</p>
+                            <p>I collaborated with a product engineer to develop the product. At the beginning of the development, I asked the customers and discussed with the co-worker to know the background and context of the project so that I could know the objective of the project. We decided to distribute our workload. He was responsible for the human interface, and I took the algorithm part.</p>
                         </div>
                         <div class="col-12">
                             <h4>Workflow</h4>
-                            <p>Analyzing each step of the workflow, I got an overview of the project. In the workflow, users would operate the human-machine interface (HMI) on the controller to set the processing parameter. The controller should generate tool paths and convert machine instruction files. Finally, the users started the machining and got the desired piece.</p>
+                            <p>By analyzing each step of the workflow, I got an overview of the project. In the workflow, users interacted with the human-machine interface (HMI) on the controller to set the processing parameter. The controller then generated tool paths and converted them to machine instruction files. Finally, the users started the machining and got the desired piece.</p>
                             <a href="img/IslandMilling/userFlow.png" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/userFlow.png" alt="user flow" ></a>
-                            <p>To collaborate with a front-end engineer, I provided an algorithm for generating tool paths. I could separate the process — “generate tool paths”. The next step is to know what is the input and the output.</p>
+                            <p>To collaborate with the product engineer, I provided an algorithm for generating tool paths. The next step was to know what was the input and the output.</p>
                         </div>
                         <div class="col-12 col-md-6">
                             <a href="img/IslandMilling/GenerateToolPath.png" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/GenerateToolPath.png" alt="the input and the output of generating tool paths" ></a>
                         </div>
                         <div class="col-12">
                             <h4>Analyze Input Parameters</h4>
-                            <p>Users input the parameters to describe the shape and the the processing parameters:</p>
+                            <p>Users input the parameters to describe the shape and the processing parameters:</p>
                             <ul>
-                                <li>Raw material descriptions: type( rectangle, circle ), position, etc.</li>
-                                <li>Island shape description parameters: type( rectangle, circle, polygon ),  width, length, diameter, corner radius, etc.</li>
-                                <li>Tool path parameters: cutting direction( clockwise/counter-clockwise ), axial depth per cut, axial/raidal thickness, etc.</li>
+                                <li>Raw material descriptions: type (e.g. rectangle, circle), position, etc.</li>
+                                <li>Island shape description parameters: type (e.g. rectangle, circle, polygon), width, length, diameter, corner radius, etc.</li>
+                                <li>Tool path parameters: cutting direction (i.e. clockwise/counter-clockwise), axial depth per cut, axial/radial thickness, etc.</li>
                             </ul>
                         </div>
                         <div class="col-10 col-md-8">
@@ -166,10 +166,10 @@
                         </div>
                         <div class="col-12">
                             <h4>Analyze Output Requirements</h4>
-                            <p>Examing customer desired tool path, I organized the rules below:</p>                            
+                            <p>Examining the customer desired tool paths, I organized the following rules:</p>                            
                             <ul>
                                 <li>The tool paths have two types: closed loop and open loop.</li>
-                                <li>For efficiency, open loop paths in the same corner can be processed together.</li>
+                                <li>The sequence of tool paths should be optimized for efficiency. Comparing the two planning methods: “from outside to inside” and “the same corner first”, processing the same corner first can shorten the total travel distance and increase productivity.</li>
                                 <li>Other parameters should set default values, e.g. processing order of corners, lead lines, etc.</li>
                             </ul>
                         </div>
@@ -187,9 +187,9 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <p>Before developing the algorithms, I defined the programming interface and provided the sample code for the front-end engineer in advance.</p>
+                            <p>Before developing the algorithms, I designed the programming interface and provided the sample code for the product engineer.</p>
                             <ul>
-                                <li>It was helpful to collaborate. Since the front-end engineer knew what the algorithm interfaces are, he could design and implement the user interface simultaneously.</li>
+                                <li>It was helpful to collaborate. Since the product engineer knew what the algorithm interfaces were, he could design and implement the user interface simultaneously.</li>
                                 <li>I could write the test code in advance. The test codes helped me evaluate my work in the end.</li>
                             </ul>
                         </div>
@@ -205,7 +205,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <p>Break down the algorithm into smaller parts and find solutions for each piece. It could separate into three parts — offset geometry, clipping geometry, and sorting the segment in the order of the same corner first. Using a similar process, I defined each part's inputs and outputs. Then, I researched how to solve each part individually. For example, offset geometry was a laborious problem to be solved generally. I found an open-source code and implemented it since I didn't want to recreate the wheel. Using established stable libraries could accelerate the development process. Moreover, I devised a method to sort the path segments in the same corner first strategy. In the end, I assembled each part and completed the task.</p>
+                            <p>I broke down the algorithm into smaller parts and found solutions for each piece. It could be separated into three parts:  geometry offset, geometry trimming, and sorting the segment. Using a similar process, I defined each part's inputs and outputs. Then, I researched how to solve each part individually. For example, geometry offset was a laborious problem to be solved generally. Fortunately, I found an open-source solution and integratedit into our product since I didn't want to reinvent the wheel. Using established stable libraries  accelerated the development process. Moreover, I devised a method to sort the path segments in the same corner first strategy. In the end, I assembled each part and completed the task.</p>
                         </div>
                         <div class="col-6 col-md-3 d-flex align-items-start flex-column">
                             <div><p>Offset Geometry</p></div>                            
@@ -231,7 +231,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <p>Since I designed the test cases in advance, I could use the test cases to examine the outcome. Later, the co-worker implemented my library into his code and demonstrated it to customers.</p>
+                            <p>Since I designed the test cases in advance, I could use them to examine the outcome at early stages. Later, the co-worker further integrated my library into his code and demonstrated it to customers.</p>
                         </div>
                     </div>
                 </div>
@@ -243,6 +243,7 @@
                     <div class="row">
                         <div class="col-12">
                             <ul>
+                                <li><p>Beyond a comprehensive solution, a focused and easy solution could also bring high satisfaction to customers. Since it was customized for the client, the project eliminated additional functions, which meant it reduced noise for the client. The client would make lesser decisions to complete the task. Therefore, the customer felt satisfied with the limited interactions to process the workpiece.</p></li>
                                 <li><p>Defining a clear software interface could benefit the later collaboration with other developers. Providing sample code is helpful for others to use. My colleague said he could conveniently use the sample code to develop his part. He felt he could work efficiently. Also, since I had written thorough testing cases, he was confident to implement my code into the final project.</p></li>
                             </ul>
                         </div>
