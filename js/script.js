@@ -13,16 +13,11 @@ function scrollFunction() {
 };
 
 function backToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo( 0, 0 );
 };
 
 function clickNavBtn() {
   var checkBox = document.getElementById( "nav_btn" );
-  var sidewrapper = document.getElementById( "nav_wrapper" );
-
-  // get button icon
-  var navIcon = document.getElementById("navIcon");
 
   // If the checkbox is checked, show right side menu
   if ( checkBox.checked == true ) {
