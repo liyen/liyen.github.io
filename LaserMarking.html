@@ -107,7 +107,11 @@
                         <div class="col-md-3">
                             <h3>My Role</h3>
                             <p>Product Engineer</p>
-                            <p></p>
+                            <ul>
+                                <li>Interface Design</li>
+                                <li>Algorithms Development</li>
+                                <li>Software Maintainence</li>
+                            </ul>
                         </div>
                         <div class="col-md-3">
                             <h3>Skill</h3>
@@ -185,7 +189,7 @@
                         <div class="col-12 col-md-6 mb-3 d-flex align-items-start flex-column">
                             <div>
                                 <h4>Generate Barcodes</h4>
-                                <p>Generate 1D barcodes and 2D barcodes, e.g., QR code, data matrix, etc.</p>
+                                <p>Generate 1D barcodes and 2D barcodes, e.g., QR code, Data Matrix, etc.</p>
                             </div>
                             <div class="drawcontainer mt-auto">
                                 <a href="img/LaserMarking/2dbarcode.svg" data-toggle="lightbox" data-gallery="fig"><img class="drawicon" src="img/LaserMarking/2dbarcode.svg" alt="2d barcode"></a>
@@ -210,7 +214,7 @@
                         <div class="col-12 col-md-6 d-flex align-items-start flex-column">
                             <div>
                                 <h4>Fill</h4>
-                                <p>Fill in the selected shape. The filling lines can be set to have a specified scanning angle, incremental angles, repeated times, etc.</p>
+                                <p>Fill in the selected shape. The filling lines can be set to have a specified scanning angle, an incremental angle, repeated times, etc.</p>
                             </div>
                             <div class="mt-auto">
                                 <a href="img/LaserMarking/stroke.svg" data-toggle="lightbox" data-gallery="fig"><img class="edit" src="img/LaserMarking/stroke.svg" alt="stroke"></a>
@@ -334,7 +338,7 @@
                         </div>
                         <div class="col-12">
                             <p>The next challenges were generating tool paths for both the 3-axis platform and the laser marking system and allowing them to coordinate smoothly.</p>
-                            <p>In the beginning, I tried to visualize the paths. I drew the laser marking paths and expected platform paths, and an idea came to mind. Since the platform is very slow due to its inertia, I wanted it to travel a path simplified from the laser marking path. This way, the platform was responsible for taking the laser marking system to an approximate location, and the laser marking system could make more granular movements. To implement this idea, I further researched several polyline simplification algorithms and examined them with different criteria. For instance, the algorithms could easily control the deviation between the original lines and the simplified lines, so the laser marking path could stay in the workspace of the laser marking module while the 3-axis platform was moving. Later, to coordinate both paths, the velocities should be allocated to each segment appropriately.</p>
+                            <p>In the beginning, I tried to visualize the paths. I drew the laser marking paths and expected platform paths, and an idea came to mind. Since the platform was very slow due to its inertia, I wanted it to travel a path simplified from the laser marking path. This way, the platform was responsible for taking the laser marking system to an approximate location, and the laser marking system could make more granular movements. To implement this idea, I further researched several polyline simplification algorithms and examined them with different criteria. For instance, the algorithms could easily control the deviation between the original lines and the simplified lines, so the laser marking path could stay in the workspace of the laser marking module while the 3-axis platform was moving. Later, to coordinate both paths, the velocities should be allocated to each segment appropriately.</p>
                             <p>Lastly, I developed simulation software to examine the result in order to shorten the development process (evaluating every modification on machines took a lot of time.) Ultimately, I tested the execution files on the machine and verified that they passed the designed test cases.</p>
                         </div>
                     </div>
@@ -346,7 +350,7 @@
                             <a href="img/LaserMarking/evaluation2.png" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/LaserMarking/evaluation2.png" alt="simulation result 2"></a>
                         </div>
                         <div class="col-12 col-md-8">
-                            <p>Simulation on examination software. (The tool path of the platform is in green; The tool path of the laser is in red.)</p>
+                            <p>Simulation on examination software. (The tool path of the platform is in green; The tool path of the laser beam is in red.)</p>
                         </div>
                     </div>
                 </div>
@@ -372,8 +376,8 @@
                     <div class="row">
                         <div class="col-12">
                             <ul>
-                                <li>I developed several user interface features during the whole development process, such as zoom in/out, select objects, object browsers, etc. In the initial stage, I defined the specification by my idea. But occasionally, I got feedback that users felt they cannot complete their tasks easily and were unsatisfying. After a while, whenever I had to develop user interfaces, I would draw wireframes or build interactive prototypes for users. Then, I could get feedback at the earlier stage of development. It helped me design practical interfaces efficiently.</li>
-                                <li>In the Large Area Synchronous Laser Marking project, planning the machine path required the knowledge of motion planning. At the beginning of the project, I found I needed more resources and asked for help. The research department trained our team about motion planning. With a common knowledge base, it was really helpful to streamline the process of later collaboration.</li>
+                                <li>I developed several user interface features during the whole development process, such as zoom in/out, select objects, object browsers, etc. In the initial stage, I defined the specification by my idea. But occasionally, I got feedback that users felt they could not complete their tasks easily and were unsatisfying. After a while, whenever I had to develop user interfaces, I would draw wireframes or build interactive prototypes for users. Then, I could get feedback at the earlier stage of development. It helped me design practical interfaces efficiently.</li>
+                                <li>In the Large Area Synchronous Laser Marking project, planning the tool paths required knowledge of motion planning. At the beginning of the project, I found I needed more resources and asked for help. The research department trained our team about motion planning. With a common knowledge base, it was really helpful to streamline the process of later collaboration.</li>
                                 <li>Finding early adopters was critical to product development. Since the laser marking market was highly competitive, the early adopters assisted us in knowing which features were preferable to new clients. They played an important role in the decision-making of the product planning strategy. Our team built critical features based on their opinions to draw potential future customers.</li>
                             </ul>
                         </div>
@@ -382,7 +386,7 @@
             </section>
         </main>
         <footer>
-            <p>Copyright &copy; 2022 &#x2022; Li Yen Huang</p>
+            <p>Copyright &copy; 2022 &#x2022; Li-Yen Huang</p>
         </footer>
         <button type="button" class="btnScrollToTop" id="btn-back-to-top" onclick="backToTop()">
             <i class="fas fa-arrow-up"></i>

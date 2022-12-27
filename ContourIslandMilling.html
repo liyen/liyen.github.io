@@ -67,7 +67,7 @@
                     <div class="row align-items-center">
                         <div class="col-md-7">
                             <h1>Contour Island Milling</h1>
-                            <p>Conversational Computer-Aided Design and Manufacturing (CAD/CAM) for Island Milling</p>
+                            <p>Algorithm Development for Generating Tool Paths for Island Milling</p>
                         </div>
                         <div class="col-md-5">                            
                             <img src="img/IslandMilling/banner.png" class="oneColumn" alt="">
@@ -84,12 +84,15 @@
                         </div>
                         <div class="col-12">
                             <p>
-                                This project aimed to provide a built-in CAD/CAM (computer-aided design/computer-aided manufacturing) program in milling machine controllers. There are several fully featured CAD/CAM software on the market. However, since software could offer so much features, they not only demand long training time for users but also are very expensive. In this project, our customers wanted to manufacture an island feature on materials without any additional features. We made a built-in CAD/CAM in the controllers. Users didn’t need to use a computer to generate machine instructions. They could do the task by using a conversational window on the controller, simplifying the process of manufacturing.
+                                This project aimed to provide a built-in computer-aided design and manufacturing (CAD/CAM) program in milling machine controllers. There were several fully featured CAD/CAM software on the market. However, since software could offer so much features, they not only demanded long training time for users but also were very expensive. In this project, our customers wanted to manufacture an island feature on materials without any additional features. We made a built-in CAD/CAM in the controllers. Users didn’t need to use a computer to generate machine instruction files. They could do the task by using a conversational window on the controller, simplifying the process of manufacturing.
                             </p>
                         </div>
                         <div class="col-md-3">
                             <h3>My Role</h3>
-                            <p>Software Engineer</p>
+                            <p>Product Engineer</p>
+                            <ul>
+                                <li>Algorithms Development</li>
+                            </ul>
                         </div>
                         <div class="col-md-3">
                             <h3>Skill</h3>
@@ -116,20 +119,20 @@
                 <h2>Workflow</h2>
                 <a href="img/IslandMilling/workflow.png" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/workflow.png" alt="" ></a>
                 <ol>
-                    <li>Define Specifications: After collecting all information and customer needs, I would define the specification and requirements of the project.</li>
-                    <li>Design Programming Interface: designing the software interface first helps collaborate with others.</li>
+                    <li>Define Specifications: After collecting all information and customer needs, I defined the specification and requirements of the project.</li>
+                    <li>Design Interface: Designing the software interface first helped me collaborate with others.</li>
                     <li>Develop Algorithms: Analyze and break down the problems. Then, find solutions to each small part.</li>
-                    <li>Evaluate Outcome: Ensure the final program achieves its objectives.</li>
+                    <li>Evaluate Outcome: Ensure the final program achieved its objectives.</li>
                 </ol>
-                <h3>Step 1: Define Specification</h3>
+                <h3>Step 1: Define Specifications</h3>
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <p>I collaborated with a product engineer to develop the product. At the beginning of the development, I asked the customers and discussed with the co-worker to know the background and context of the project so that I could know the objective of the project. We decided to distribute our workload. He was responsible for the human interface, and I took the algorithm part.</p>
+                            <p>I collaborated with a product engineer to develop the product. At the beginning of the development, I asked the customers and discussed with the co-worker to know the background and context of the project so that I could know the objective of the project. Then, we distributed our workload. He was responsible for the human interface, and I took the algorithm part.</p>
                         </div>
                         <div class="col-12">
                             <h4>Workflow</h4>
-                            <p>By analyzing each step of the workflow, I got an overview of the project. In the workflow, users interacted with the human-machine interface (HMI) on the controller to set the processing parameter. The controller then generated tool paths and converted them to machine instruction files. Finally, the users started the machining and got the desired piece.</p>
+                            <p>Analyzing each step of the workflow gave me an overview of the project. In the workflow, users interacted with the human-machine interface (HMI) on the controller to set the processing parameter. The controller then generated tool paths and converted them to machine instruction files. Finally, the users started machining and got the desired piece.</p>
                             <a href="img/IslandMilling/userFlow.png" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/userFlow.png" alt="user flow" ></a>
                             <p>To collaborate with the product engineer, I provided an algorithm for generating tool paths. The next step was to know what was the input and the output.</p>
                         </div>
@@ -138,10 +141,10 @@
                         </div>
                         <div class="col-12">
                             <h4>Analyze Input Parameters</h4>
-                            <p>Users input the parameters to describe the shape and the processing parameters:</p>
+                            <p>Users inputted the parameters to describe the shape and the processing parameters:</p>
                             <ul>
-                                <li>Raw material descriptions: type (e.g. rectangle, circle), position, etc.</li>
-                                <li>Island shape description parameters: type (e.g. rectangle, circle, polygon), width, length, diameter, corner radius, etc.</li>
+                                <li>Raw material descriptions: type (e.g., rectangle, circle), position, etc.</li>
+                                <li>Island shape description parameters: type (e.g., rectangle, circle, polygon), width, length, diameter, corner radius, etc.</li>
                                 <li>Tool path parameters: cutting direction (i.e. clockwise/counter-clockwise), axial depth per cut, axial/radial thickness, etc.</li>
                             </ul>
                         </div>
@@ -178,9 +181,9 @@
                             <h4>Analyze Output Requirements</h4>
                             <p>Examining the customer desired tool paths, I organized the following rules:</p>                            
                             <ul>
-                                <li>The tool paths have two types: closed loop and open loop.</li>
-                                <li>The sequence of tool paths should be optimized for efficiency. Comparing the two planning methods: “from outside to inside” and “the same corner first”, processing the same corner first can shorten the total travel distance and increase productivity.</li>
-                                <li>Other parameters should set default values, e.g. processing order of corners, lead lines, etc.</li>
+                                <li>The tool paths had two types: closed loop and open loop.</li>
+                                <li>The sequence of tool paths should be optimized for efficiency. Comparing the two planning methods: “from outside to inside” and “the same corner first”, processing the same corner first could shorten the total travel distance and increase productivity.</li>
+                                <li>Other parameters should set default values, e.g., the processing order of corners, retract height, etc.</li>
                             </ul>
                         </div>
                         <div class="col-6">
@@ -193,14 +196,14 @@
                         </div>
                     </div>
                 </div>
-                <h3>Step 2: Define Interface </h3>
+                <h3>Step 2: Define Interface</h3>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
                             <p>Before developing the algorithms, I designed the programming interface and provided the sample code for the product engineer.</p>
                             <ul>
                                 <li>It was helpful to collaborate. Since the product engineer knew what the algorithm interfaces were, he could design and implement the user interface simultaneously.</li>
-                                <li>I could write the test code in advance. The test codes helped me evaluate my work in the end.</li>
+                                <li>I could write the test codes in advance. The test codes helped me evaluate my work at the end of the project.</li>
                             </ul>
                         </div>
                         <div class="col-12 col-md-6">
@@ -215,22 +218,22 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <p>I broke down the algorithm into smaller parts and found solutions for each piece. It could be separated into three parts:  geometry offset, geometry trimming, and sorting the segment. Using a similar process, I defined each part's inputs and outputs. Then, I researched how to solve each part individually. For example, geometry offset was a laborious problem to be solved generally. Fortunately, I found an open-source solution and integratedit into our product since I didn't want to reinvent the wheel. Using established stable libraries  accelerated the development process. Moreover, I devised a method to sort the path segments in the same corner first strategy. In the end, I assembled each part and completed the task.</p>
+                            <p>I broke down the algorithm into smaller parts and found solutions for each piece. It could be separated into three parts:  geometry offset, geometry trimming, and sorting the segment. Using a similar process, I defined each part's inputs and outputs. Then, I researched how to solve each part individually. For example, geometry offset was a laborious problem to be solved generally. Fortunately, I found an open-source solution and integrated it into our product since I didn't want to reinvent the wheel. Using established stable libraries  accelerated the development process. Moreover, I devised a method to sort the path segments in the same corner first strategy. In the end, I assembled each part and completed the task.</p>
                         </div>
                         <div class="col-6 col-md-3 d-flex align-items-start flex-column">
-                            <div><p>Offset Geometry</p></div>                            
+                            <div><p>Geometry Offset</p></div>                            
                             <div class="mt-auto">
                                 <a href="img/IslandMilling/offsetGeometry.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/offsetGeometry.svg" alt="" ></a>
                             </div>
                         </div>
                         <div class="col-10 col-md-6 d-flex align-items-start flex-column">
-                            <div><p>Clip Geometry</p></div>
+                            <div><p>Geometry Trimming</p></div>
                             <div class="mt-auto">
                                 <a href="img/IslandMilling/clipGeometry.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/clipGeometry.svg" alt="" ></a>
                             </div>
                         </div>
                         <div class="col-6 col-md-3 d-flex align-items-start flex-column">
-                            <div><p>Sort Path Segments</p></div>
+                            <div><p>Sorting Path Segments</p></div>
                             <div class="mt-auto">
                                 <a href="img/IslandMilling/sortSegments.svg" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/sortSegments.svg" alt="" ></a>
                             </div>
@@ -241,7 +244,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <p>Since I designed the test cases in advance, I could use them to examine the outcome at early stages. Later, the co-worker further integrated my library into his code and demonstrated it to customers.</p>
+                            <p>Since I designed the test cases in advance, I could use them to examine the outcome at early stages. Later, the co-worker further integrated my library into his code and delivered it to customers.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -267,8 +270,8 @@
                     <div class="row">
                         <div class="col-12">
                             <ul>
-                                <li><p>In addition to a comprehensive solution, a focused and simplified  one could also bring high satisfaction to customers. Since it was customized for the client, the project eliminated unused functions, which meant  reduced distractions for the client. The client would experience less hurdles  to complete the task. Therefore, the customer felt satisfied with the limited interactions to process the workpiece.</p></li>
-                                <li><p>Defining a clear software interface could benefit the later collaboration with other developers. Providing sample code is helpful for others to use. My colleague said he could conveniently use the sample code to develop his part. He felt he could work efficiently. Also, since I had written thorough testing cases, he was confident to implement my code into the final project.</p></li>
+                                <li><p>In addition to a comprehensive solution, a focused and simplified one could also bring high satisfaction to customers. Since it was customized for the client, the project eliminated unused functions, which meant reduced distractions for the client. The client would experience fewer hurdles in completing the task. Therefore, the customer felt satisfied with the limited interactions to process the workpiece.</p></li>
+                                <li><p>Defining a clear software interface benefited the collaboration with other developers. Providing sample code was also helpful for others to use. My colleague said the sample code helped him to integrate his human interface and my part smoothly. Also, since I had written thorough testing cases, he was confident to evaluate the final result.</p></li>
                             </ul>
                         </div>
                     </div>
@@ -276,7 +279,7 @@
             </section>
         </main>
         <footer>
-            <p>Copyright &copy; 2022 &#x2022; Li Yen Huang</p>
+            <p>Copyright &copy; 2022 &#x2022; Li-Yen Huang</p>
         </footer>
         <button type="button" class="btnScrollToTop" id="btn-back-to-top" onclick="backToTop()">
             <i class="fas fa-arrow-up"></i>
