@@ -84,7 +84,7 @@
                         </div>
                         <div class="col-12">
                             <p>
-                                This project aimed to provide a built-in computer-aided design and manufacturing (CAD/CAM) program in milling machine controllers. There were several fully featured CAD/CAM software on the market. However, since software could offer so much features, they not only demanded long training time for users but also were very expensive. In this project, our customers wanted to manufacture an island feature on materials without any additional features. We made a built-in CAD/CAM in the controllers. Users didn’t need to use a computer to generate machine instruction files. They could do the task by using a conversational window on the controller, simplifying the process of manufacturing.
+                                This project aimed to provide a built-in computer-aided design and manufacturing (CAD/CAM) program for milling machine controllers. There were several fully featured CAD/CAM software on the market. However, since software could offer so many features, they not only demanded long training time for users but also were very expensive. In this project, our customers wanted to manufacture an island feature on materials without any additional features. We made a built-in CAD/CAM in the controllers. Users did not need to use a computer to generate machine instruction files. They could do the task by using a conversational window on the controller, simplifying the process of manufacturing.
                             </p>
                         </div>
                         <div class="col-md-3">
@@ -116,7 +116,7 @@
                 </div>
             </section>
             <section>
-                <h2>Workflow</h2>
+                <h2>Problem Solving Process</h2>
                 <a href="img/IslandMilling/workflow.png" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/workflow.png" alt="" ></a>
                 <ol>
                     <li>Define Specifications: After collecting all information and customer needs, I defined the specification and requirements of the project.</li>
@@ -145,7 +145,7 @@
                             <ul>
                                 <li>Raw material descriptions: type (e.g., rectangle, circle), position, etc.</li>
                                 <li>Island shape description parameters: type (e.g., rectangle, circle, polygon), width, length, diameter, corner radius, etc.</li>
-                                <li>Tool path parameters: cutting direction (i.e. clockwise/counter-clockwise), axial depth per cut, axial/radial thickness, etc.</li>
+                                <li>Tool path parameters: cutting direction (i.e., clockwise/counter-clockwise), axial depth per cut, axial/radial thickness, etc.</li>
                             </ul>
                         </div>
                         <div class="col-10 col-md-8">
@@ -182,7 +182,7 @@
                             <p>Examining the customer desired tool paths, I organized the following rules:</p>                            
                             <ul>
                                 <li>The tool paths had two types: closed loop and open loop.</li>
-                                <li>The sequence of tool paths should be optimized for efficiency. Comparing the two planning methods: “from outside to inside” and “the same corner first”, processing the same corner first could shorten the total travel distance and increase productivity.</li>
+                                <li>The sequence of tool paths should be optimized for efficiency. Comparing the two planning methods: “from outside to inside” and “the same corner first,” processing the same corner first could shorten the total travel distance and increase productivity.</li>
                                 <li>Other parameters should set default values, e.g., the processing order of corners, retract height, etc.</li>
                             </ul>
                         </div>
@@ -218,7 +218,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <p>I broke down the algorithm into smaller parts and found solutions for each piece. It could be separated into three parts:  geometry offset, geometry trimming, and sorting the segment. Using a similar process, I defined each part's inputs and outputs. Then, I researched how to solve each part individually. For example, geometry offset was a laborious problem to be solved generally. Fortunately, I found an open-source solution and integrated it into our product since I didn't want to reinvent the wheel. Using established stable libraries  accelerated the development process. Moreover, I devised a method to sort the path segments in the same corner first strategy. In the end, I assembled each part and completed the task.</p>
+                            <p>I broke down the algorithm into smaller parts and found solutions for each piece. It could be separated into three parts:  geometry offset, geometry trimming, and sorting the segment. Using a similar process, I defined each part's inputs and outputs. Then, I researched how to solve each part individually. For example, geometry offset was a laborious problem to be solved generally. Fortunately, I found an open-source solution and integrated it into our product since I did not want to reinvent the wheel. Using established stable libraries  accelerated the development process. Moreover, I devised a method to sort the path segments in the same corner first strategy. In the end, I assembled each part and completed the task.</p>
                         </div>
                         <div class="col-6 col-md-3 d-flex align-items-start flex-column">
                             <div><p>Geometry Offset</p></div>                            
@@ -251,7 +251,7 @@
                         <div class="col-6">
                             <figure>
                                 <a href="img/IslandMilling/Result1.png" data-toggle="lightbox" data-gallery="fig"><img class="oneColumn" src="img/IslandMilling/Result1.png" alt="result of generated NC file - Isometric Projection" ></a>
-                                <figcaption>The simulation of generated NC file - Isometic projection</figcaption>
+                                <figcaption>The simulation of generated NC file - Isometric projection</figcaption>
                             </figure>
                         </div>
                         <div class="col-6">
